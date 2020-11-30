@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Future24x7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="icon" href="icon/icon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<style media="screen">
+  .bground{
+    background-color: white;
+  }
+  .content{
+    margin-top: 100px;
+  }
+</style>
+
+
+<body>
+
+  <div class="w3-to">
+    <div class="w3-row bground">
+      <center>
+        <img src="img/logo.png" alt="logo" width="40%" style="margin-bottom: 10px;">
+      </center>
+      </div>
+      <div class="w3-col s4">
+        <a class="w3-button w3-block w3-grey">Mission</a>
+      </div>
+      <div class="w3-col s4">
+        <a class="w3-button w3-block w3-grey">Services</a>
+      </div>
+      <div class="w3-col s4">
+        <a class="w3-button w3-block w3-grey">Contact Us</a>
+      </div>
+  </div>
+
+  <div class="content" style="max-width:2000px; margin-top:100px;">
+    <div class="mySlides w3-display-container w3-center">
+      <img src="https://www.flaticon.com/svg/static/icons/svg/2593/2593065.svg" alt="Mechanic" width="20%">
+
+      <h3>Mechanic</h3>
+      <small>We bring Mechanic on single platform </small>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.flaticon.com/svg/static/icons/svg/2857/2857532.svg" alt="Talent" width="20%">
+    <h3>My Talent</h3>
+    <small>We bring Individual Talent on single platform</small>
+  </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.flaticon.com/svg/static/icons/svg/362/362364.svg" alt="Shop" width="20%">
+    <h3>Shopmix</h3>
+    <small> We bring local service provider & customer on single platform</small>
+  </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center s2">
+    <img src="https://www.flaticon.com/svg/static/icons/svg/609/609361.svg" alt="transport" width="20%">
+    <h3>Transport</h3>
+    <small>We bring Induviduals on single transportation virtual platform</small>
+  </div>
+
+  <div class="w3-sand w3-grayscale w3-large">
+
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Who We Are</span></h5>
+        <p> Future24x7 Ecom & Media Solutions is Ecomerce firm established in 2018, Nagpur based who provide future based Ecomerce & Media platform for startups & Corporates in all over India. We promote & develop innovative research based Ecomerce
+          platform for future based requirements in Ecomerce & Media world.</p>
+        <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Our Mission</span></h5>
+        <p>Research & develop Future based Ecomerce platform who Provide Automated & Online platform for startups & Indivduals for current & future competitive ecosystem in this changeable Economic Environment in the world.</p>
+        <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Our Services</span></h5>
+
+        <div class="w3-row">
+          <div class="w3-col s6">
+            <a href="" class="w3-button w3-block">My Talent</a>
+          </div>
+          <div class="w3-col s6">
+            <a href="" class="w3-button w3-block ">Mechanic</a>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-col s6">
+            <a href="https://www.tutoronline.com" class="w3-button w3-block ">Tutor Online</a>
+          </div>
+          <div class="w3-col s6">
+            <a href="#Shop" class="w3-button w3-block ">Shopmix</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-content w3-padding-64">
+        <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Contact Us</span></h5>
+        <p class=" w3-center">Future24x7 Ecom & Media Solutions</br>244, Shankar nagar, Nagpur (MH)</br>contact@myfuture24x7.com</br>9604154735</p>
+      </div>
+
+      <center>
+        <footer class="w3-center">
+          <small>Copyright © 2018 Future24x7 Ecom & Media Solutions all right reserved.</small>
+        </footer>
+      </center>
+      <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {
+            myIndex = 1
+          }
+          x[myIndex - 1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+      </script>
+
+</body>
+
+</html>
